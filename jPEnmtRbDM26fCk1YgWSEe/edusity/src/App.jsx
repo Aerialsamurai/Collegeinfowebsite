@@ -27,7 +27,7 @@ const App = () => {
       <Overview/>
       <Location/>
      <div className="container">
-        <Title subTitle='Our PROGRAM' title='What We Offer'/>
+{/*         <Title subTitle='Our PROGRAM' title='What We Offer'/> */}
         <Programs/>
         <About setPlayState={setPlayState}/>
         <Title subTitle='Gallery' title='Campus Photos'/>
