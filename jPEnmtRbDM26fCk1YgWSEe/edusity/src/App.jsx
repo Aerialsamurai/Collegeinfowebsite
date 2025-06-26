@@ -3,6 +3,10 @@ import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import Programs from './Components/Programs/Programs'
 import Title from './Components/Title/Title'
+import Extra from './Components/extratemp/extra'
+import Navbar2 from './Components/navbar2/navbar2'
+import Location from './Components/Locationtemp/location'
+import Overview from './Components/Overview/overview'
 import About from './Components/About/About'
 import Campus from './Components/Campus/Campus'
 import Testimonials from './Components/Testimonials/Testimonials'
@@ -18,6 +22,10 @@ const App = () => {
     <div>
      <Navbar/>
      <Hero/>
+      <Navbar2/>
+      <Extra/>
+      <Overview/>
+      <Location/>
      <div className="container">
         <Title subTitle='Our PROGRAM' title='What We Offer'/>
         <Programs/>
