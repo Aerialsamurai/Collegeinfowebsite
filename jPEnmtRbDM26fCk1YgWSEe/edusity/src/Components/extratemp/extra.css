@@ -1,44 +1,107 @@
 .extra-container {
   display: flex;
- 
   gap: 30px;
   margin: 40px auto;
   flex-wrap: wrap;
-   
   justify-content: space-between;
   padding: 0 5vw;
 }
 
+/* Card Box Styling with Animation */
 .extra-box {
   width: 40%;
   min-height: 140px;
   border: 2px solid black;
   border-radius: 20px;
-  font-family: sans-serif;
- 
-  /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); */
+  font-family: 'Segoe UI', sans-serif;
   padding: 20px;
   background-color: #fff;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   flex: 1;
   margin: 0 10.5vw;
+
+  /* Animation on load */
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease forwards;
 }
 
+/* Delay second box (cutoff) slightly */
+.extra-box:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+/* Hover effect */
 .extra-box:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
+/* Heading inside box */
 .extra-box h3 {
-  margin-top: 0;
+  font-size: 22px;
+  margin-bottom: 10px;
   font-weight: bold;
-  font-size: 20px;
   color: #111;
 }
 
+/* Know more link styling */
 .know-more {
-  margin-top: 20px;
+  margin-top: 15px;
   font-style: italic;
   text-decoration: underline;
   color: #333;
-  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.know-more:hover {
+  color: #007bff;
+}
+
+/* Shared Table Styling for Seat Matrix and Cutoffs */
+.seat-matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-family: inherit;
+  table-layout: fixed;
+}
+
+/* Table cell styling */
+.seat-matrix-table th,
+.seat-matrix-table td {
+  padding: 10px 16px;
+  font-size: 15px;
+}
+
+/* Branch column */
+.seat-matrix-table td:first-child,
+.seat-matrix-table th:first-child {
+  text-align: left;
+  padding-left: 24px;
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Number column (Seats / Ranks) */
+.seat-matrix-table td:last-child,
+.seat-matrix-table th:last-child {
+  text-align: right;
+  padding-right: 24px;
+  width: 100px;
+  white-space: normal;     /* Allow wrapping if necessary */
+  overflow: visible;       /* No hidden text */
+  text-overflow: unset;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
