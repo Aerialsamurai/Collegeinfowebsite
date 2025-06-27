@@ -23,7 +23,9 @@ const Extra = () => {
             <tr><td>Engineering Physics</td><td>50</td></tr>
           </tbody>
         </table>
-        <a className="know-more" href="#full-seat-matrix">Know more</a>
+        <p>
+  <Link to="/Seatmatrix" className="know-more">Know more</Link>
+</p>
       </div>
 
       {/* Cutoffs Box */}
@@ -45,7 +47,9 @@ const Extra = () => {
             <tr><td>Engineering Physics</td><td>1420</td></tr>
           </tbody>
         </table>
-        <a className="know-more" href="#full-cutoff">Know more</a>
+        <p>
+  <Link to="/Cutoff" className="know-more">Know more</Link>
+</p>
       </div>
     </div>
   );
