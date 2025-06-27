@@ -13,12 +13,17 @@ import Testimonials from './Components/Testimonials/Testimonials'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 import VideoPlayer from './Components/VideoPlayer/VideoPlayer'
+import Seatmatrix from './Components/Seatmatrix/seatmatrix'
+import Cutoff from './Components/Cutoff/cutoff'
 
 const App = () => {
 
   const [playState, setPlayState] = useState(false);
 
   return (
+    <Routes>
+        {/*  Route for homepage */}
+        <Route path="/" element={
     <div>
      <Navbar/>
      <Hero/>
@@ -40,6 +45,13 @@ const App = () => {
      </div>
      <VideoPlayer playState={playState} setPlayState={setPlayState} />
     </div>
+    }/>
+    {/*  Route for SeatMatrix page */}
+        <Route path="/Seatmatrix" element={<Seatmatrix />} />
+
+        {/*  Route for Cutoffs page */}
+        <Route path="/Cutoff" element={<Cutoff />} />
+      </Routes>
   )
 }
 
