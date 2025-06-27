@@ -26,24 +26,27 @@ const App = () => {
         <Route path="/" element={
     <div>
      <Navbar/>
-     <Hero/>
-      <Navbar2/>
-      <Extra/>
-      <Overview/>
-      <Location/>
-     <div className="container">
-{/*         <Title subTitle='Our PROGRAM' title='What We Offer'/> */}
-        <Programs/>
-        <About setPlayState={setPlayState}/>
+      <Hero/>
+        
+        
+        <Overview/>
         <Title subTitle='Gallery' title='Campus Photos'/>
         <Campus/>
-        <Title subTitle='TESTIMONIALS' title='What Student Says'/>
-        <Testimonials/>
-        <Title subTitle='Contact Us' title='Get in Touch'/>
-        <Contact/>
-        <Footer/>
-     </div>
-     <VideoPlayer playState={playState} setPlayState={setPlayState} />
+        <About setPlayState={setPlayState}/>
+        <Location/>
+        <Title subTitle='Ranking' title='Recognized by NIRF, QS, and more'/>
+        <Extra/>
+      <div className="container">
+        <Title subTitle='Our PROGRAM' title='What We Offer'/>
+          <Programs/>
+          
+          <Title subTitle='TESTIMONIALS' title='What Student Says'/>
+          <Testimonials/>
+          <Title subTitle='Contact Us' title='Get in Touch'/>
+          <Contact/>
+          <Footer/>
+      </div>
+      <VideoPlayer playState={playState} setPlayState={setPlayState} />
     </div>
     }/>
     {/*  Route for SeatMatrix page */}
