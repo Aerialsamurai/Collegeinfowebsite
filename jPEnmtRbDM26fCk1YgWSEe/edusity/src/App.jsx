@@ -15,7 +15,7 @@ import Footer from './Components/Footer/Footer'
 import VideoPlayer from './Components/VideoPlayer/VideoPlayer'
 import Seatmatrix from './Components/Seatmatrix/seatmatrix'
 import Cutoff from './Components/Cutoff/cutoff'
-
+import Ranking from './Components/Rankings/extra'
 const App = () => {
 
   const [playState, setPlayState] = useState(false);
