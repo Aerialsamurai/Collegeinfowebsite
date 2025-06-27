@@ -1,107 +1,76 @@
 .extra-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   margin: 40px auto;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 5vw;
 }
 
-/* Card Box Styling with Animation */
 .extra-box {
-  width: 40%;
-  min-height: 140px;
-  border: 2px solid black;
+  width: 300px;
+  min-height: 220px;
   border-radius: 20px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: sans-serif;
   padding: 20px;
-  background-color: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex: 1;
-  margin: 0 10.5vw;
-
-  /* Animation on load */
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 0.6s ease forwards;
+  background: linear-gradient(135deg, rgba(8, 0, 58, 0.8), rgba(0, 102, 255, 0.6));
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-/* Delay second box (cutoff) slightly */
-.extra-box:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-/* Hover effect */
 .extra-box:hover {
   transform: translateY(-6px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
-/* Heading inside box */
-.extra-box h3 {
-  font-size: 22px;
+.extra-box img {
+  width: 60px;
+  height: auto;
   margin-bottom: 10px;
-  font-weight: bold;
-  color: #111;
 }
 
-/* Know more link styling */
+.extra-box h3 {
+  margin: 5px 0 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.india-today-logo {
+  width: 100px; /* adjust this size to fit your design */
+  height: auto;
+  object-fit: contain;
+}
+.qs-logo {
+  width: 40px; /* adjust as needed */
+  height: auto;
+  object-fit: contain;
+}
+
+.extra-box .subheading {
+  font-size: 14px;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.extra-box .rank-number {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffd700;
+  margin-top: 5px;
+}
+
 .know-more {
-  margin-top: 15px;
+  margin-top: auto;
   font-style: italic;
   text-decoration: underline;
-  color: #333;
-  display: inline-block;
+  color: #eee;
+  cursor: pointer;
   font-size: 14px;
-  transition: color 0.3s ease;
 }
+/* shared image style */
 
-.know-more:hover {
-  color: #007bff;
-}
-
-/* Shared Table Styling for Seat Matrix and Cutoffs */
-.seat-matrix-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-  font-family: inherit;
-  table-layout: fixed;
-}
-
-/* Table cell styling */
-.seat-matrix-table th,
-.seat-matrix-table td {
-  padding: 10px 16px;
-  font-size: 15px;
-}
-
-/* Branch column */
-.seat-matrix-table td:first-child,
-.seat-matrix-table th:first-child {
-  text-align: left;
-  padding-left: 24px;
-  width: 70%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* Number column (Seats / Ranks) */
-.seat-matrix-table td:last-child,
-.seat-matrix-table th:last-child {
-  text-align: right;
-  padding-right: 24px;
-  width: 100px;
-  white-space: normal;     /* Allow wrapping if necessary */
-  overflow: visible;       /* No hidden text */
-  text-overflow: unset;
-}
-
-/* Keyframes for fade-in animation */
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
