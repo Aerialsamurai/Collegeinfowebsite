@@ -1,56 +1,57 @@
 import React from "react";
 import "./extra.css";
+import nirfLogo from "../../assets/nirf-logo.png"; 
+import QS from "../../assets/QS-Logo.jpg"; 
+import indtod from "../../assets/indtod.png"
+
+const rankings = [
+  {
+    title: "NIRF Ranking",
+    sub: "Engineering",
+    rank: "#3",
+    image: nirfLogo
+  },
+  {
+    title: "NIRF Ranking",
+    sub: "Overall",
+    rank: "#4",
+    image: nirfLogo
+  },
+  {
+    title: "QS Rankings",
+    sub: "World University Ranking",
+    rank: "#123",
+    image: QS,
+     className: "qs-logo"
+  },
+  {
+    title: "India Today",
+    sub: "Top Engineering Colleges",
+    rank: "#2",
+     image: indtod,
+     className: "india-today-logo" 
+  }
+];
 
 const Extra = () => {
   return (
     <div className="extra-container">
-      {/* Seat Matrix Box */}
-      <div className="extra-box">
-        <h3>SEAT MATRIX</h3>
-        <table className="seat-matrix-table">
-          <thead>
-            <tr>
-              <th>Branch</th>
-              <th>Total Seats</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Computer Science and Engineering</td><td>104</td></tr>
-            <tr><td>Electrical Engineering</td><td>120</td></tr>
-            <tr><td>Mechanical Engineering</td><td>90</td></tr>
-            <tr><td>Chemical Engineering</td><td>85</td></tr>
-            <tr><td>Civil Engineering</td><td>95</td></tr>
-            <tr><td>Engineering Physics</td><td>50</td></tr>
-          </tbody>
-        </table>
-        <p>
-  <Link to="/Seatmatrix" className="know-more">Know more</Link>
-</p>
-      </div>
+      {rankings.map((item, index) => (
+        <div className="extra-box" key={index}>
+          <img
+  src={item.image}
+  alt={`${item.title} logo`}
+  className={`rank-logo ${item.className || ""}`}
+/>
 
-      {/* Cutoffs Box */}
-      <div className="extra-box">
-        <h3>CUTOFFS</h3>
-        <table className="seat-matrix-table">
-          <thead>
-            <tr>
-              <th>Branch</th>
-              <th>Closing Rank</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Computer Science and Engineering</td><td>117</td></tr>
-            <tr><td>Electrical Engineering</td><td>387</td></tr>
-            <tr><td>Mechanical Engineering</td><td>890</td></tr>
-            <tr><td>Chemical Engineering</td><td>1500</td></tr>
-            <tr><td>Civil Engineering</td><td>2100</td></tr>
-            <tr><td>Engineering Physics</td><td>1420</td></tr>
-          </tbody>
-        </table>
-        <p>
-  <Link to="/Cutoff" className="know-more">Know more</Link>
-</p>
-      </div>
+
+
+          <h3>{item.title}</h3>
+          <p className="subheading">{item.sub}</p>
+          <p className="rank-number">{item.rank}</p>
+          <p className="know-more">Know more</p>
+        </div>
+      ))}
     </div>
   );
 };
