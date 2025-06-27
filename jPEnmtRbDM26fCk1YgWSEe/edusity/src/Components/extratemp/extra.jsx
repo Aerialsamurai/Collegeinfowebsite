@@ -1,57 +1,24 @@
 import React from "react";
 import "./extra.css";
-import nirfLogo from "../../assets/nirf-logo.png"; 
-import QS from "../../assets/QS-Logo.jpg"; 
-import indtod from "../../assets/indtod.png"
-
-const rankings = [
-  {
-    title: "NIRF Ranking",
-    sub: "Engineering",
-    rank: "#3",
-    image: nirfLogo
-  },
-  {
-    title: "NIRF Ranking",
-    sub: "Overall",
-    rank: "#4",
-    image: nirfLogo
-  },
-  {
-    title: "QS Rankings",
-    sub: "World University Ranking",
-    rank: "#123",
-    image: QS,
-     className: "qs-logo"
-  },
-  {
-    title: "India Today",
-    sub: "Top Engineering Colleges",
-    rank: "#2",
-     image: indtod,
-     className: "india-today-logo" 
-  }
-];
+import { Link } from 'react-router-dom';
 
 const Extra = () => {
   return (
     <div className="extra-container">
-      {rankings.map((item, index) => (
-        <div className="extra-box" key={index}>
-          <img
-  src={item.image}
-  alt={`${item.title} logo`}
-  className={`rank-logo ${item.className || ""}`}
-/>
+      <div className="extra-box">
+        <h3>Seat Matrix</h3>
+        <p>
+  <Link to="/Seatmatrix" className="know-more">Know more</Link>
+</p>
 
+      </div>
 
-
-          <h3>{item.title}</h3>
-          <p className="subheading">{item.sub}</p>
-          <p className="rank-number">{item.rank}</p>
-          <p className="know-more">Know more</p>
-        </div>
-      ))}
+      <div className="extra-box">
+        <h3>Cutoffs</h3>
+         <p>
+  <Link to="/Cutoff" className="know-more">Know more</Link>
+</p>
+      </div>
     </div>
   );
 };
