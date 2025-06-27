@@ -27,7 +27,7 @@ const App = () => {
     <div>
      <Navbar/>
       <Hero/>
-        
+          <Extra/>
         
         <Overview/>
         <Title subTitle='Gallery' title='Campus Photos'/>
