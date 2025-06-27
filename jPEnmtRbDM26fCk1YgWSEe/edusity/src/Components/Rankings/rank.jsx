@@ -33,7 +33,7 @@ const rankings = [
   }
 ];
 
-const Extra = () => {
+const Ranking = () => {
   return (
     <div className="extra-container">
       {rankings.map((item, index) => (
