@@ -35,7 +35,7 @@ const App = () => {
         <About setPlayState={setPlayState}/>
         <Location/>
         <Title subTitle='Ranking' title='Recognized by NIRF, QS, and more'/>
-        <Extra/>
+        <Ranking/>
       <div className="container">
         <Title subTitle='Our PROGRAM' title='What We Offer'/>
           <Programs/>
