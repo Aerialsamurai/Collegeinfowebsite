@@ -56,4 +56,4 @@ const Extra = () => {
   );
 };
 
-export default Extra;
+export default Ranking;
