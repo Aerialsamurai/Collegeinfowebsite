@@ -1,13 +1,18 @@
 .hero{
-    width: 100%;
+   width: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)), url('../../assets/iitd.jpg');
-    background-size: cover;
+    background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)), url('../../assets/iitdelhipics.jpg');
+    background-size: cover;               /* better than 100% for scaling */
     background-position: center;
+    background-repeat: no-repeat;
     color: #fff;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 0 1rem;                      /* add some horizontal padding for smaller screens */
+    box-sizing: border-box;
 }
 .hero-text{
     text-align: center;
