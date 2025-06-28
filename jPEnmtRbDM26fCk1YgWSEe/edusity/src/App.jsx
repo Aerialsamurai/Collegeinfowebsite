@@ -17,6 +17,7 @@ import VideoPlayer from './Components/VideoPlayer/VideoPlayer'
 import Seatmatrix from './Components/Seatmatrix/seatmatrix'
 import Cutoff from './Components/Cutoff/cutoff'
 import Ranking from './Components/Rankings/rank'
+import Admission from './Components/Admission/Admission'
 const App = () => {
 
   const [playState, setPlayState] = useState(false);
@@ -38,6 +39,7 @@ const App = () => {
         <Title subTitle='Ranking' title='Recognized by NIRF, QS, and more'/>
         <Ranking/>
       <div className="container">
+        <Admission/>
         <Title subTitle='Our PROGRAM' title='What We Offer'/>
           <Programs/>
           
