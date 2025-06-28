@@ -2,7 +2,7 @@ import React from 'react';
 import './Hero.css';
 import dark_arrow from '../../assets/dark-arrow.png';
 import Navbar from '../Navbar/Navbar';
-
+import Navbar2 from '../navbar2/navbar2';
 const Hero = () => {
   return (
     <div className='hero container'>
@@ -13,7 +13,7 @@ const Hero = () => {
           Explore more <img src={dark_arrow} alt="" />
         </button>
       </div>
-     
+     <Navbar2/>
     </div>
   );
 };
