@@ -28,7 +28,6 @@ const App = () => {
     <div>
      <Navbar/>
       <Hero/>
-      <Navbar2/>
           <Extra/>
         
         <Overview/>
