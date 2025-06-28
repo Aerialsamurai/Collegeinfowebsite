@@ -33,22 +33,13 @@
   width: 60px;
   height: auto;
   margin-bottom: 10px;
+  object-fit: contain;
 }
 
 .extra-box h3 {
   margin: 5px 0 5px;
   font-size: 18px;
   font-weight: 600;
-}
-.india-today-logo {
-  width: 100px; /* adjust this size to fit your design */
-  height: auto;
-  object-fit: contain;
-}
-.qs-logo {
-  width: 40px; /* adjust as needed */
-  height: auto;
-  object-fit: contain;
 }
 
 .extra-box .subheading {
@@ -72,5 +63,55 @@
   cursor: pointer;
   font-size: 14px;
 }
-/* shared image style */
 
+/* Individual image size tweaks */
+.india-today-logo {
+  width: 100px;
+  height: auto;
+}
+
+.qs-logo {
+  width: 40px;
+  height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .extra-box {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .extra-box {
+    width: 100%;
+    min-height: 200px;
+  }
+
+  .extra-box h3 {
+    font-size: 16px;
+  }
+
+  .extra-box .rank-number {
+    font-size: 28px;
+  }
+
+  .extra-box img {
+    width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .extra-box {
+    padding: 15px;
+    border-radius: 16px;
+  }
+
+  .extra-box .subheading {
+    font-size: 13px;
+  }
+
+  .know-more {
+    font-size: 13px;
+  }
+}
