@@ -1,0 +1,98 @@
+.location-wrapper {
+  width: 100%;
+  padding: 20px;
+}
+.location-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 400px;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.map-section {
+  display:flex;
+  flex: 1;
+  min-height: 300px; /* add this */
+  height:100%;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute; /* ✅ forces iframe to cover container */
+  top: 0;
+  left: 0;
+  border: none;
+}
+.info-section {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.location-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center; /* Or left, depending on your design */
+}
+
+
+.info-box h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.info-box p {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight:light;
+}
+/* .info-box {
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+/* push to github */
+@media (max-width: 768px) {
+  .location-container {
+    flex-direction: column; /* stack map above info */
+    height: auto; /* allow height to grow */
+    gap: 30px; /* more gap between stacked sections */
+  }
+
+  .map-section {
+    width: 90%; /* leave margin from sides */
+    height: 100%;
+    display:flex;
+    flex:1;
+    min-height:300px; /* fixed height for mobile map preview */
+    margin: 0 auto; 
+    position:relative/* center the map block */
+  }
+
+  .info-section {
+    width: 100%; /* full width for contact info */
+    grid-template-columns: 1fr 1fr; /* maintain 2-column layout */
+    gap: 16px; /* slightly reduced gap for mobile */
+  }
+
+  .info-box h2 {
+    font-size: 16px;
+  }
+
+  .info-box p {
+    font-size: 16px;
+  }
+} 
