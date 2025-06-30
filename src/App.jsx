@@ -15,7 +15,7 @@ import Cutoff from './Components/Cutoff/cutoff'
 import Ranking from './Components/Rankings/rank'
 import Fees from './Components/Fees/fees'
 import Admission from'./Components/Admission/admission'
-// import Placement from './Components/Placement/placement'
+import Placement from './Components/Placement/placement'
 
 const App = () => {
 
@@ -47,7 +47,7 @@ const App = () => {
      <div className="container">
        
         <Element name="Ranking"><Ranking/></Element>
-        {/* <Element name="Placement"><Placement/></Element> */}
+        <Element name="Placement"><Placement/></Element>
         
        
         <Title subTitle='REVIEWS' title='What Student Says'/>
