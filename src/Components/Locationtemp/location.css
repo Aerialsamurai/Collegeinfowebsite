@@ -1,27 +1,49 @@
 .location-wrapper {
-  width: 100%;
-  padding: 20px;
+  /* width: 100%;
+  padding: 20px; */
+  margin-left:40px;
+  margin-right:40px;
+  margin-top:40px;
 }
+
 .location-container {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   width: 100%;
   height: 400px;
   gap: 20px;
   padding: 20px;
-  box-sizing: border-box;
+  box-sizing: border-box; */
+  background-color: #f7f9fc;
+  padding: 20px 20px;
+  max-width: 1000px;
+   /* margin-left: 40px;  
+  margin-right: auto;  */
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
 }
-
+.location-heading::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #112d4e;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
 .map-section {
   display:flex;
   flex: 1;
-  min-height: 300px; /* add this */
+  min-height: 500px; /* add this */
   height:100%;
   border: 2px solid #000;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   position: relative;
+  
 }
 
 .map-section iframe {
@@ -38,12 +60,16 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 20px;
+  overflow-x: auto;
+  width: 100%;
 }
 .location-heading {
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 32px;
+  font-weight: 700;
+  color: #112d4e;
   margin-bottom: 20px;
-  text-align: center; /* Or left, depending on your design */
+  /* text-align: left; */
+  
 }
 
 
@@ -51,6 +77,8 @@
   margin: 0;
   font-size: 18px;
   font-weight: bold;
+  margin-top:30px;
+  margin-bottom: 10px;
 }
 
 .info-box p {
@@ -69,7 +97,8 @@
   .location-container {
     flex-direction: column; /* stack map above info */
     height: auto; /* allow height to grow */
-    gap: 30px; /* more gap between stacked sections */
+    gap: 30px; 
+    padding: 40px 16px;/* more gap between stacked sections */
   }
 
   .map-section {
