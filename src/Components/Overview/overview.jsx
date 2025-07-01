@@ -3,8 +3,11 @@ import './overview.css';
 
 const Overview = () => {
   return (
-    <div className="overview-container">
+    <div className="ov-head">
       <h2 className="overview-heading">Overview</h2>
+    
+    <div className="overview-container">
+      
       <p className="overview-paragraph">
         Welcome to the Indian Institute of Technology Delhi (IIT Delhi) — a beacon of innovation,
         intellect, and impact nestled in the vibrant heart of India's capital. Founded in 1961,
@@ -23,8 +26,8 @@ const Overview = () => {
         forged, and futures are crafted. Explore the journey, embrace the challenge, and become a part of
         a legacy that continues to shape the future.
       </p>
+      </div>
     </div>
   );
 };
-
 export default Overview;
