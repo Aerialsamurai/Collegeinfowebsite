@@ -92,4 +92,11 @@
     .slider p{
         font-size: 12px;
     }
+    .slider ul {
+    width: 400%; /* since each slide is 100% wide now */
+  }
+
+  .slider ul li {
+    width: 100%; /* show one slide per screen */
+  }
 }
