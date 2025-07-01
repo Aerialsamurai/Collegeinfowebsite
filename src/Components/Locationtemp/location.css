@@ -49,7 +49,7 @@
 .map-section iframe {
   width: 100%;
   height: 100%;
-  position: absolute; /* ✅ forces iframe to cover container */
+  position: absolute; /*  forces iframe to cover container */
   top: 0;
   left: 0;
   border: none;
