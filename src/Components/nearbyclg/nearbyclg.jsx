@@ -4,6 +4,8 @@ import msit from '../../assets/msit.png';
 import nsut from '../../assets/nsut.png';
 import iiitd from '../../assets/iiitd.png';
 import iitro from '../../assets/iitro.png';
+import nitkuru from'../../assets/nitkuru.png';
+import iiita from'../../assets/iiita.png';
 
 const nearclgs = [
   { name: "DTU Delhi", location: "New Delhi, Delhi", img: dtu },
@@ -11,6 +13,8 @@ const nearclgs = [
   { name: "NSUT Delhi West Campus", location: "New Delhi, Delhi", img: nsut },
   { name: "IIIT Delhi", location: "New Delhi, Delhi", img: iiitd },
   { name: "IIT Ropar", location: "Ropar, Punjab", img: iitro },
+  { name: "NIT Kurukshestra", location: "Kurukshestra, Haryana", img: nitkuru },
+  { name: "IIIT Allahabad", location: "Prayagraj(Allahabad), Uttar Pradesh", img: iiita },
 ];
 
 const Nearbyclg = () => {
