@@ -1,0 +1,130 @@
+/* .custom-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 12px 0;
+  border-bottom: 1px solid #ccc;
+  font-family: sans-serif;
+}
+
+.nav-item {
+  padding: 10px 20px;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item:hover {
+  background-color: black;
+  color: white;
+}
+
+.divider {
+  height: 24px;
+  width: 1px;
+  background-color: black;
+} */
+ /* Navbar2.css */
+.custom-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  background: linear-gradient(90deg, #f7f9fc 60%, #e3e9f7 100%);
+  color: #212EA0;
+  width: 100%;
+  min-height: 60px;
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 2px 16px rgba(33,46,160,0.07);
+  font-family: "Outfit", 'Segoe UI', Arial, sans-serif;
+  margin-bottom: 18px;
+  border-bottom: 1.5px solid #e3e9f7;
+  z-index: 5;
+}
+
+.nav2-item-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.nav2-item {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: #212EA0;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  letter-spacing: 0.2px;
+  position: relative;
+  z-index: 1;
+}
+
+.nav2-item:hover, .active-nav2-item {
+  background: #212EA0;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(33,46,160,0.10);
+  text-decoration: none;
+}
+
+.nav2-item:focus {
+  outline: 2px solid #ffd700;
+  outline-offset: 2px;
+}
+
+.nav2-item::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 0%;
+  height: 2px;
+  background: #ffd700;
+  transition: width 0.3s;
+}
+
+.nav2-item:hover::after, .active-nav2-item::after {
+  width: 60%;
+}
+
+@media (max-width: 900px) {
+  .custom-navbar {
+    flex-wrap: wrap;
+    min-height: unset;
+    border-radius: 0 0 12px 12px;
+    font-size: 0.98rem;
+  }
+  .nav2-item-wrapper {
+    flex: 1 0 33.33%;
+    min-width: 120px;
+  }
+  .nav2-item {
+    padding: 14px 0;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .custom-navbar {
+    flex-direction: column;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 1px 6px rgba(33,46,160,0.07);
+    margin-bottom: 8px;
+  }
+  .nav2-item-wrapper {
+    min-width: 100%;
+    width: 100%;
+  }
+  .nav2-item {
+    padding: 12px 0;
+    font-size: 0.98rem;
+    border-radius: 6px;
+  }
+}

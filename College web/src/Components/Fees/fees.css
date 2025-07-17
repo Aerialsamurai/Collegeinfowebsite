@@ -1,0 +1,84 @@
+.fees-head{
+margin-left: 40px;
+margin-right:40px;
+margin-top: 40px;
+
+}
+.fees-container {
+  background: linear-gradient(120deg, #f7f9fc 70%, #e3e9f7 100%);
+  padding: 32px 24px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(33,46,160,0.08);
+  font-family: 'Segoe UI', sans-serif;
+  margin-bottom: 32px;
+}
+.fees-section table{
+  min-width: 600px;
+}
+.fees-title {
+
+  font-size: 32px;
+  font-weight: 700;
+  color: #112d4e;
+  margin-bottom: 8px;
+
+}
+.fees-title::after {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 3px;
+  background-color: #112d4e;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
+.fees-section {
+   margin-top:30px;
+   overflow-x: auto;
+  width: 100%;
+}
+
+.fees-section h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #000;
+}
+.fees-section h1{
+  font-size:30px;
+  margin-top:15px;
+  margin-bottom:30px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table thead {
+  background-color: #f0f0f0;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+@media(max-width: 768px){
+  .fees-head{
+margin-left: 10px;
+margin-right:10px;
+
+
+}
+}
+@media (max-width: 700px) {
+  .fees-container {
+    border-radius: 10px;
+    padding: 18px 6px;
+  }
+}
+
+

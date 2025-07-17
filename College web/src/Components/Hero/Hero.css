@@ -1,0 +1,95 @@
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)), url('../../assets/iitd.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-text{
+    text-align: center;
+    max-width: 800px;
+}
+.hero-text h1{
+    font-size: 60px;
+    font-weight: 600;
+    color:white;
+}
+.hero-text p{
+    max-width: 700px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+}
+/* ---------- media query --------- */
+
+@media (max-width: 850px){
+    .hero-text h1{
+        font-size: 40px;
+    }
+}
+@media (max-width: 650px){
+    .hero-text h1{
+        font-size: 30px;
+        max-width: 400px;
+        margin: auto;
+    }
+    .hero-text p{
+        font-size: 14px;
+        margin: 15px auto 30px;
+    }
+}
+
+.hero-section {
+  background: linear-gradient(120deg, #e3e9f7 60%, #f7f9fc 100%);
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 60px 0 0 0;
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 4px 24px rgba(33,46,160,0.07);
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #212EA0;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: #676767;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.hero-section svg.hero-wave {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+}
+
+@media (max-width: 700px) {
+  .hero-section {
+    min-height: 260px;
+    padding: 36px 0 0 0;
+    border-radius: 0 0 16px 16px;
+  }
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}

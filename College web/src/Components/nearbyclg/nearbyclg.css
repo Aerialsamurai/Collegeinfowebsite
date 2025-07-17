@@ -1,0 +1,81 @@
+.near-clg-wrapper {
+  background: #fff;
+  padding: 24px 20px;
+  border-radius: 14px;
+  font-family: "Outfit", sans-serif;
+  border: none;
+  margin: 0 0 20px 0;
+  box-shadow: 0 2px 12px rgba(33,46,160,0.07);
+  transition: box-shadow 0.2s;
+  position: static;
+  top: unset;
+  z-index: unset;
+}
+.near-clg-wrapper:hover {
+  box-shadow: 0 4px 16px rgba(33,46,160,0.13);
+}
+.nearclg-item:hover .nearclg-name {
+  color: #000000;
+  text-decoration: underline;
+}
+.nearinforwrap{
+    display: flex;
+  flex-direction: column;
+}
+.near-clg-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.nearclg-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nearclg-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.nearclg-item:last-child {
+  border-bottom: none;
+}
+
+.nearclg-logo {
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.nearclg-name {
+  font-size: 16px;
+  color: #333;
+}
+.nearclg-location {
+  font-size: 14px;
+  color: #555;
+}
+
+.nearbyclg-container {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(33,46,160,0.07);
+  padding: 24px 20px;
+  margin-bottom: 0;
+  font-family: "Outfit", sans-serif;
+  transition: box-shadow 0.2s;
+}
+.nearbyclg-container:hover {
+  box-shadow: 0 4px 16px rgba(33,46,160,0.13);
+}
